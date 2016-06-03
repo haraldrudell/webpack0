@@ -1,6 +1,6 @@
 {
   "name": "babel0",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Demonstrate auto-building EcmaScript 2015",
   "scripts": {
     "start": "node_modules/webpack-dev-server/bin/webpack-dev-server.js --progress --content-base public",

@@ -1,36 +1,41 @@
 import express from 'express'
 import {EventEmitter} from 'events'
+import {AppLauncher} from './applauncher'
 
 export class RestServer extends EventEmitter{
   constructor(o) {
     super()
-console.log(this.constructor.name, 'constructor pid:', process.pid)
-    process.kill(process.pid, 'SIGUSR1')
-    debugger
+    new AppLauncher
+    if (o.debug) process.kill(process.pid, 'SIGUSR1') // enable debugging for this process
     this.emitError = this.emitError.bind(this)
-    new Promise((resolve, reject) => {
-      // 160630 express@4.14.0
-      // the express default export is a single function named createApplication of type Function
-      console.log(this.constructor.name, 'express default export function name:', express.name)
-      // app is an anonymous function of type EventEmitter
-      var app = express()
-        .use(express.static('public')) // middleware is function (req, res, next)
-      // app.listen() returns a Server object
-      var server = app.listen(o.port, o.address, this.handleRequest.bind(this))
+    this.requestNo = 0
+
+    // 160630 express@4.14.0
+    // the express default export is a single function named createApplication of type Function
+    console.log(this.constructor.name, 'express default export function name:', express.name)
+    // app is an anonymous function of type EventEmitter
+    var app = express()
+      .get('/:id', this.handleRequest.bind(this))
+      .use(express.static('public')) // middleware is function (req, res, next)
+    // app.listen() returns a Server object
+    var server = app.listen(o.port, o.address, e => {
+      if (!e) {
+        let a = server.address()
+        console.log(`${this.constructor.name} Listening on http://${a.address}:${a.port}`)
+      } else this.emitError(e)
     })
-    .catch(e => process.nextTick(this.emitError, e))
   }
 
-  handleRequest() {
-    var x = 1
-console.log(this.constructor.name, 'handleRequest')
-    debugger
-    x++
-console.log(this.constructor.name, x)
+  handleRequest(req, res) {
+    var id = req.params.id
+    var result = `${this.constructor.name} request# ${++this.requestNo} for id: ${id}`
+
+    console.log(result)
+    res.end(result)
   }
 
   emitError(e) {
-console.log(this.constructor.name, 'ERROR')
+    console.log(this.constructor.name, 'ERROR')
     this.emit('error', e)
   }
 }

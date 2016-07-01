@@ -5,6 +5,8 @@ export class RestServer extends EventEmitter{
   constructor(o) {
     super()
 console.log(this.constructor.name, 'constructor pid:', process.pid)
+    process.kill(process.pid, 'SIGUSR1')
+    debugger
     this.emitError = this.emitError.bind(this)
     new Promise((resolve, reject) => {
       // 160630 express@4.14.0
@@ -20,7 +22,11 @@ console.log(this.constructor.name, 'constructor pid:', process.pid)
   }
 
   handleRequest() {
+    var x = 1
 console.log(this.constructor.name, 'handleRequest')
+    debugger
+    x++
+console.log(this.constructor.name, x)
   }
 
   emitError(e) {

@@ -30,6 +30,8 @@ export class RestServer extends EventEmitter{
     var id = req.params.id
     var result = `${this.constructor.name} request# ${++this.requestNo} for id: ${id}`
 
+    debugger
+
     console.log(result)
     res.end(result)
   }

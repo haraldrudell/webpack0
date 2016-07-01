@@ -4,7 +4,7 @@
   "description": "Demonstrate a REST service",
   "scripts": {
     "start": "node_modules/.bin/babel-watch --presets es2015,es2016 server.js",
-    "debug": "node_modules/.bin/babel-watch --presets es2015,es2016 server.js debug"
+    "debug": "node_modules/.bin/babel-watch --presets es2015,es2016 server-debug.js"
   },
   "repository": {
     "type": "git",

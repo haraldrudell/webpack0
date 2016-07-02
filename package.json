@@ -12,10 +12,6 @@
   "bugs": {
     "url": "https://github.com/haraldrudell/rest0/issues"
   },
-  "scripts": {
-    "start": "gulp",
-    "debug": "gulp debug"
-  },
   "keywords": [
     "REST",
     "express",
@@ -25,6 +21,10 @@
     "babel-cli",
     "nodemon"
   ],
+  "scripts": {
+    "start": "gulp",
+    "debug": "gulp debug"
+  },
   "dependencies": {
     "express": "^4.14.0"
   },

@@ -2,6 +2,12 @@
   Skeleton REST service
 </h1>
 Written by <a href=http://haraldrudell.com >Harald Rudell</a>
+
+> One-liner install and run on Linux, press two control+c to exit:
+```bash
+git clone --depth 1 https://github.com/haraldrudell/rest0.git && cd rest0 && npm install && npm start
+```
+
 <h2>Benefits</h2>
 - **Production ready** using babel-cli and express, a robust, high-throughput http server
 - **ECMAScript 2016** the latest language version with source maps debugging

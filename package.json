@@ -7,7 +7,7 @@
   "homepage": "https://github.com/haraldrudell/rest0",
   "repository": {
     "type": "git",
-    "url": "ssh://gt:rest0.git"
+    "url": "https://github.com/haraldrudell/rest0.git"
   },
   "bugs": {
     "url": "https://github.com/haraldrudell/rest0/issues"

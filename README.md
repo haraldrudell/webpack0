@@ -1,6 +1,8 @@
-<div style=background-color:#ffcc66;padding:0.1in>
-<h1 style="text-align:center">
+<div bgcolor="red" style="background-color:red">
+<h1 align=center style="background-color:red">
+  <span style="background-color:red">
   Skeleton REST service
+  </span>
 </h1>
 Written by <a href=http://haraldrudell.com >Harald Rudell</a>
 <h2>Benefits</h2>

@@ -1,5 +1,5 @@
-<div bgcolor=#ffcc66 >
-<h1 align="center">
+<div style=background-color:#ffcc66;padding:0.1in>
+<h1 style=text-align:center>
   Skeleton REST service
 </h1>
 Written by <a href=http://haraldrudell.com >Harald Rudell</a>

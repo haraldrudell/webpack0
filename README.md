@@ -1,8 +1,5 @@
-<div bgcolor="red" style="background-color:red">
-<h1 align=center style="background-color:red">
-  <span style="background-color:red">
+<h1 align=center>
   Skeleton REST service
-  </span>
 </h1>
 Written by <a href=http://haraldrudell.com >Harald Rudell</a>
 <h2>Benefits</h2>
@@ -16,4 +13,3 @@ Written by <a href=http://haraldrudell.com >Harald Rudell</a>
 - **SQL database** via Sequelize object-relational mapping
 
 © 2016 <a href=http://haraldrudell.com >Harald Rudell</a> ISC License
-</div>

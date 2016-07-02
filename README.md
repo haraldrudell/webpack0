@@ -18,4 +18,4 @@ Written by <a href=http://haraldrudell.com >Harald Rudell</a>
 <h2>Features</h2>
 - **SQL database** via Sequelize object-relational mapping
 
-© 2016 <a href=http://haraldrudell.com >Harald Rudell</a> ISC License
+© 2016 <a href=http://haraldrudell.com >Harald Rudell</a> ISC [License](LICENSE)

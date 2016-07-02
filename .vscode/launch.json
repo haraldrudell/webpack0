@@ -5,9 +5,9 @@
       "name": "Launch",
       "type": "node",
       "request": "launch",
-      "program": "${workspaceRoot}/node_modules/.bin/babel-watch",
-      "stopOnEntry": false,
-      "args": ["--presets", "es2015,es2016", "server.js"],
+      "program": "${workspaceRoot}/src/server.js",
+      "stopOnEntry": true,
+      "args": [],
       "cwd": "${workspaceRoot}",
       "preLaunchTask": null,
       "runtimeExecutable": null,
@@ -18,8 +18,8 @@
         "NODE_ENV": "development"
       },
       "externalConsole": false,
-      "sourceMaps": false,
-      "outDir": null
+      "sourceMaps": true,
+      "outDir": "${workspaceRoot}/build"
     },
     {
       "name": "Attach",
@@ -28,7 +28,7 @@
       "port": 5858,
       "address": "localhost",
       "restart": false,
-      "sourceMaps": false,
+      "sourceMaps": true,
       "outDir": null,
       "localRoot": "${workspaceRoot}",
       "remoteRoot": null

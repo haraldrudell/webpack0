@@ -1,28 +1,39 @@
 {
   "name": "rest0",
-  "version": "0.0.0",
-  "description": "Demonstrate a REST service",
-  "scripts": {
-    "start": "node_modules/.bin/babel-watch --presets es2015,es2016 server.js",
-    "debug": "node_modules/.bin/babel-watch --presets es2015,es2016 server-debug.js"
-  },
+  "description": "Skeleton REST service",
+  "version": "0.0.1",
+  "author": "Harald Rudell <c@haraldrudell.com> (http://haraldrudell.com)",
+  "license": "ISC",
+  "homepage": "https://github.com/haraldrudell/rest0",
   "repository": {
     "type": "git",
     "url": "ssh://gt:rest0.git"
   },
+  "bugs": {
+    "url": "https://github.com/haraldrudell/rest0/issues"
+  },
+  "scripts": {
+    "start": "gulp",
+    "debug": "gulp debug"
+  },
   "keywords": [
-    "rest",
-    "express"
+    "REST",
+    "express",
+    "sequalize",
+    "orm",
+    "ECMAScript 2016",
+    "babel-cli",
+    "nodemon"
   ],
-  "author": "Harald Rudell <c@haraldrudell.com> (http://haraldrudell.com)",
-  "license": "ISC",
   "dependencies": {
     "express": "^4.14.0"
   },
   "devDependencies": {
-    "babel-core": "^6.10.4",
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-es2016": "^6.11.0",
-    "babel-watch": "^2.0.2"
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-babel": "^6.1.2",
+    "gulp-nodemon": "^2.1.0",
+    "gulp-print": "^2.0.1"
   }
 }

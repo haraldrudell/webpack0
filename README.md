@@ -4,7 +4,7 @@
 Written by <a href=http://haraldrudell.com >Harald Rudell</a>
 
 ><dl>
-  <dt>One-liner install and run on Linux, press two control+c to exit:</dt>
+  <dt>One-liner install, run and open a browser on Linux, press two control+c to exit:</dt>
   <dd>git clone --depth 1 https://github.com/haraldrudell/rest0.git && cd rest0 && npm install && npm start</dd>
 </dl>
 

@@ -34,6 +34,7 @@
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-babel": "^6.1.2",
     "gulp-nodemon": "^2.1.0",
-    "gulp-print": "^2.0.1"
+    "gulp-print": "^2.0.1",
+    "open": "0.0.5"
   }
 }

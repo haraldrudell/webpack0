@@ -10,12 +10,14 @@ const sourcemaps = require('gulp-sourcemaps')
 const nodemon = require('gulp-nodemon')
 const print = require('gulp-print')
 const path = require('path')
+const open = require('open')
 
 const paths = {
   scripts: {
     src: 'src/**/*.js',
     dest: 'build',
-  }
+  },
+  url: 'http://127.0.0.1:8081',
 }
 const nodemonOptions = {
   script: path.join(paths.scripts.dest, 'server.js'),
@@ -32,6 +34,11 @@ exports.default = gulp.series(scripts,
 
 function hotReload() {
   return nodemon(nodemonOptions)
+    .once('config:update', openBrowser)
+}
+
+function openBrowser() {
+  setTimeout(() => open(paths.url), 2e2)
 }
 
 function hotReloadDebug() {

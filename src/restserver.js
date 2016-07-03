@@ -1,3 +1,6 @@
+/*
+© 2016 Harald Rudell <c@haraldrudell.com> (http://haraldrudell.com) ISC license.
+*/
 import express from 'express'
 import {EventEmitter} from 'events'
 import {AppLauncher} from './applauncher'

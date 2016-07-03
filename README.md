@@ -13,7 +13,4 @@ Written by <a href=http://haraldrudell.com >Harald Rudell</a>
 - **Hot-reload development** front-end ECMAScript self-updates using webpack-dev-server
 - **Module recency** 2016-07-02
 
-<h2>Features TODO</h2>
-- **Feature** description
-
 © 2016 <a href=http://haraldrudell.com >Harald Rudell</a> ISC [License](LICENSE)

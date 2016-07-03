@@ -1,7 +1,7 @@
 {
   "name": "webpack0",
   "description": "Demonstrate hot-reloading web site using ECMAScript 2016",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Harald Rudell <c@haraldrudell.com> (http://haraldrudell.com)",
   "license": "ISC",
 "homepage": "https://github.com/haraldrudell/webpack0",
